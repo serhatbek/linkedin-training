@@ -1,0 +1,17 @@
+.nav__search {
+  @include flexCenter(row, center, center);
+  border-right: 1px solid $light-gray-color;
+
+  &-icon {
+    margin: 0 20px;
+  }
+
+  &-input {
+    width: 367px;
+    height: 80px;
+    background-color: transparent;
+    color: lighten($black-color, 10%);
+    font-size: 14px;
+    font-weight: 300;
+  }
+}

@@ -1,0 +1,16 @@
+header {
+  @include flexCenter(row, center, center);
+  height: 80px;
+  background-color: $white-color;
+
+  .site-logo {
+    padding: 0 40px;
+    border-right: 1px solid $light-gray-color;
+    height: 80px;
+    @include flexCenter(row, center, center);
+  }
+
+  .nav__wrapper {
+    @include flexCenter(row, center, center);
+  }
+}

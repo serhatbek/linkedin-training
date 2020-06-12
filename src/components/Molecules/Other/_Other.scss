@@ -1,0 +1,7 @@
+.menu-other {
+  @include flexCenter(column, center, center);
+  text-transform: uppercase;
+  width: 90px;
+  padding: 0 20px;
+  border-right: 1px solid $light-gray-color;
+}
