@@ -1,0 +1,28 @@
+.cover-full {
+  width: 220vh;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: $blue-color;
+  color: $gray-color;
+  z-index: 1;
+  text-align: center;
+  @include flexCenter(row, center, center);
+
+  &__error {
+    margin-right: 210px;
+    padding: 40px;
+    border: 25px solid $gray-color;
+    border-radius: 40px;
+
+    &-text {
+      font-size: 100px;
+      padding: 40px;
+      border: 5px solid $gray-color;
+      border-radius: 20px;
+    }
+  }
+}

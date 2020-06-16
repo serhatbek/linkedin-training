@@ -30,7 +30,13 @@ a {
 
 input,
 button {
-  font: inherit;
+  font-family: inherit;
   outline: none;
   border: none;
+  box-sizing: inherit;
+}
+
+input:focus,
+button:focus {
+  outline: none;
 }

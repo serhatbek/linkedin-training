@@ -1,13 +1,19 @@
-header {
+.header {
   @include flexCenter(row, center, center);
   height: 80px;
   background-color: $white-color;
+  margin: 0 auto;
 
-  .site-logo {
-    padding: 0 40px;
-    border-right: 1px solid $light-gray-color;
-    height: 80px;
+  .wrapper {
     @include flexCenter(row, center, center);
+
+    .site-logo {
+      padding: 0 40px;
+      border-right: 1px solid $light-gray-color;
+      height: 80px;
+      @include flexCenter(row, center, center);
+      margin-top: 8px;
+    }
   }
 
   .nav__wrapper {

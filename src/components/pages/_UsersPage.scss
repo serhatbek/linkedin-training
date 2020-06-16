@@ -1,0 +1,9 @@
+.users {
+  margin-top: 40px;
+
+  &-grid {
+    display: grid;
+    grid-template-columns: 3fr 9fr;
+    grid-gap: 40px;
+  }
+}

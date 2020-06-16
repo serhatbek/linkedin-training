@@ -1,0 +1,13 @@
+.profile-card {
+  max-width: 850px;
+  height: 360px;
+
+  &__img {
+    max-width: 850px;
+    width: 100%;
+
+    img {
+      width: 100%;
+    }
+  }
+}

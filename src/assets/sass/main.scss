@@ -13,13 +13,22 @@
 @import '../../components/Atoms/Text/Paragraph';
 @import '../../components/Atoms/Text/Text';
 @import '../../components/Atoms/Text/SubText';
+@import '../../components/Atoms/Button/Button';
 
 //************* MOLECULES *****************
 
 @import '../../components/Molecules/Navigation/Navigation';
 @import '../../components/Molecules/UserLoggedin/UserLoggedin';
 @import '../../components/Molecules/Other/Other';
+@import '../../components/Molecules/ProfileCard/ProfileCard';
+@import '../../components/Molecules/Links/Links';
 
 //************* ORGANISMS *****************
 
 @import '../../components/Organisms/Header/Header';
+@import '../../components/Organisms/Footer/Footer';
+
+//************* PAGES *****************
+
+@import '../../components/pages/UsersPage';
+@import '../../components/pages/NotFountPage';

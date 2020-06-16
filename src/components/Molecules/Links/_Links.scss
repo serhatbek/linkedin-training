@@ -1,0 +1,38 @@
+.links-box {
+  background-color: $white-color;
+  width: 290px;
+  height: 306px;
+  font-size: 12px;
+  font-weight: 500;
+
+  &__item {
+    @include flexCenter(row, space-between, center);
+    border-bottom: 1px solid $light-gray-color;
+    height: 52px;
+    padding: 0 30px;
+
+    &:hover {
+      border-left: 10px solid $blue-color;
+    }
+
+    &:active {
+      color: $dark-gray-color;
+      border-left: 10px solid $blue-color;
+    }
+  }
+
+  &__item span {
+    font-size: 12px;
+    font-weight: 700;
+  }
+
+  &__item a {
+    text-decoration: none;
+    color: $black-color;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 15px 30px;
+    flex: 1;
+  }
+}
