@@ -5,7 +5,7 @@ class UserPage extends Component {
   render() {
     return (
       <div className="container">
-        <div className="user">
+        <div className="user-grid">
           <div className="user-col">
             <ProfileCard></ProfileCard>
           </div>

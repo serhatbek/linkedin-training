@@ -14,7 +14,7 @@ function Footer() {
           <Link to="/users">
             <div className="site-logo">
               <h1 className="logo">
-                <img src={Logo} alt="Logo" />
+                <img className="footer-logo" src={Logo} alt="Logo" />
               </h1>
               <img src={TextLogo} alt="Text Logo"></img>
             </div>
