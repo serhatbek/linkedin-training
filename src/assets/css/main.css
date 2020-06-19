@@ -110,6 +110,10 @@ button:focus {
   border: 1px solid #0275b1;
 }
 
+.btn-white {
+  background-color: #fff;
+}
+
 .btn-transparent {
   background-color: #fff;
   color: #0275b1;
@@ -117,7 +121,8 @@ button:focus {
 }
 
 .btn-thick {
-  padding: 8px 38px;
+  padding: 8px 0;
+  width: 170px;
 }
 
 .btn-thin {
@@ -212,17 +217,101 @@ button:focus {
 }
 
 .profile-card {
+  display: flex;
+  flex-direction: column;
   max-width: 850px;
   height: 360px;
+  position: relative;
+  background-color: #fff;
+  margin-bottom: 100px;
 }
 
-.profile-card__img {
-  max-width: 850px;
+.profile-card__user-img {
+  max-width: 180px;
   width: 100%;
+  height: 100%;
+  position: absolute;
+  top: -30px;
+  left: 30px;
+  border-radius: 50%;
+  border: 25px solid #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
 }
 
-.profile-card__img img {
-  width: 100%;
+.profile-card__user-img img {
+  border-radius: 50%;
+}
+
+.profile-card__buttons {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  width: 170px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.profile-card__buttons .btn {
+  color: #181818;
+  height: 36px;
+  padding: 0 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.profile-card__body {
+  position: relative;
+}
+
+.profile-card__content {
+  width: 650px;
+  margin-left: auto;
+  padding: 15px 30px 35px 30px;
+}
+
+.profile-card__content-title {
+  display: flex;
+  justify-content: space-between;
+}
+
+.profile-card__content-title-name {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.profile-card__content-title-location {
+  display: flex;
+  align-items: center;
+}
+
+.profile-card__content-buttons {
+  display: flex;
+}
+
+.profile-card__content-buttons button {
+  margin: 15px 20px 0 0;
+}
+
+.profile-card__content p {
+  font-size: 15px;
+}
+
+.profile-card .heading1 {
+  margin-right: 10px;
+}
+
+.profile-card .text {
+  margin-left: 10px;
+}
+
+.profile-card span {
+  margin-left: 5px;
 }
 
 .links-box {
@@ -306,10 +395,342 @@ button:focus {
   height: 45px;
   border-left: 2px solid #0275b1;
   padding: 0 45px 0 15px;
+  margin-left: 50px;
 }
 
 .user-card__content .btn {
   margin-bottom: 0;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.dashboard {
+  width: 290px;
+  height: 360px;
+  background-color: #fff;
+  padding: 25px 30px 30px 30px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.dashboard__link {
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.dashboard__title {
+  padding: 20px 0;
+  border-bottom: 1px solid #f4f4f4;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  margin-bottom: 20px;
+}
+
+.dashboard__title .heading3 {
+  text-transform: uppercase;
+}
+
+.dashboard__content-item-number {
+  font-size: 52px;
+  color: #0275b1;
+  font-weight: bold;
+  line-height: 54px;
+}
+
+.dashboard__content-item-title {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.about-card {
+  width: 850px;
+  height: 170px;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 30px;
+  margin-bottom: 20px;
+}
+
+.about-card .heading1 {
+  margin-bottom: 15px;
+}
+
+.about-card__text {
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+
+.about-card__link {
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.projects-card {
+  background-color: #fff;
+  width: 850px;
+  height: 355px;
+  padding: 30px;
+  margin-bottom: 20px;
+}
+
+.projects-card__title {
+  width: 130px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  margin-bottom: 20px;
+}
+
+.projects-card__title span {
+  font-size: 18px;
+  color: #747474;
+}
+
+.projects-card__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+
+.projects-card__content-box {
+  margin-bottom: 20px;
+  height: 216px;
+}
+
+.projects-card__content-box-img {
+  margin-bottom: 10px;
+}
+
+.projects-card__content-box .heading2 {
+  margin-bottom: 5px;
+}
+
+.projects-card__link {
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.skills-card {
+  width: 850px;
+  height: 220px;
+  background-color: #fff;
+  padding: 30px;
+  margin-bottom: 20px;
+}
+
+.skills-card .heading1 {
+  margin-bottom: 24px;
+}
+
+.skills-card__content {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+
+.skills-card__content-box {
+  width: 250px;
+  height: 80px;
+  border: 1px solid #f4f4f4;
+  padding: 14px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.skills-card__content-box-title {
+  margin-bottom: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  width: 200px;
+}
+
+.skills-card__content-box-number {
+  color: #0275b1;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.skills-card__content-box-img {
+  height: 24px;
+}
+
+.skills-card__link {
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.experience-card {
+  background-color: #fff;
+  margin-bottom: 20px;
+  padding: 30px;
+}
+
+.experience-card .heading1 {
+  margin-bottom: 25px;
+}
+
+.experience-card__content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.experience-card__content-img {
+  margin-right: 16px;
+}
+
+.experience-card__content-box-subtitle {
+  width: 190px;
+  height: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  margin-bottom: 5px;
+}
+
+.experience-card__content-box-date {
+  width: 190px;
+  height: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  margin-bottom: 10px;
+}
+
+.experience-card__content-box-text {
+  font-size: 10px;
+}
+
+.visitors-card {
+  width: 290px;
+  height: 427px;
+  background-color: #fff;
+  padding: 25px 30px 30px 30px;
+  margin-bottom: 20px;
+}
+
+.visitors-card__link {
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.visitors-card__title {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #f4f4f4;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  margin-bottom: 20px;
+}
+
+.visitors-card__title .heading3 {
+  text-transform: uppercase;
+}
+
+.visitors-card__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+
+.visitors-card__content-user {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  margin-bottom: 15px;
+}
+
+.visitors-card__content-user-img {
+  width: 52px;
+  height: 52px;
+  margin-right: 15px;
+}
+
+.visitors-card__content-user-img img {
+  border-radius: 50%;
+}
+
+.courses-card {
+  width: 290px;
+  height: 338px;
+  background-color: #fff;
+  padding: 25px 30px 30px 30px;
+  margin-bottom: 20px;
+}
+
+.courses-card__link {
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.courses-card__title {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #f4f4f4;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  margin-bottom: 20px;
+}
+
+.courses-card__title .heading3 {
+  text-transform: uppercase;
+}
+
+.courses-card__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 5px;
+}
+
+.courses-card__content-user {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  margin-bottom: 15px;
+}
+
+.courses-card__content-user-info {
+  width: 130px;
+}
+
+.courses-card__content-user-img {
+  width: 80px;
+  height: 52px;
+  margin-right: 15px;
+}
+
+.courses-card__content-user-img img {
+  width: 100%;
+  height: 52px;
 }
 
 .header {
@@ -462,4 +883,11 @@ button:focus {
   padding: 40px;
   border: 5px solid #cecece;
   border-radius: 20px;
+}
+
+.user-grid {
+  display: grid;
+  grid-template-columns: 8fr 4fr;
+  grid-gap: 40px;
+  margin-top: 10px;
 }

@@ -23,6 +23,13 @@
 @import '../../components/Molecules/ProfileCard/ProfileCard';
 @import '../../components/Molecules/Links/Links';
 @import '../../components/Molecules/UserCard/UserCard';
+@import '../../components/Molecules/DashboardCard/DashboardCard';
+@import '../../components/Molecules/AboutCard/AboutCard';
+@import '../../components/Molecules/ProjectsCard/ProjectsCard';
+@import '../../components/Molecules/SkillsCard/SkillsCard';
+@import '../../components/Molecules/ExperienceCard/ExperienceCard';
+@import '../../components/Molecules/VisitorsCard/VisitorsCard';
+@import '../../components/Molecules/CoursesCard/CoursesCard';
 
 //************* ORGANISMS *****************
 
@@ -33,3 +40,4 @@
 
 @import '../../components/pages/UsersPage';
 @import '../../components/pages/NotFountPage';
+@import '../../components/pages/UserPage';

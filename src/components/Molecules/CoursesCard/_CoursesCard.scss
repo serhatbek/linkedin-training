@@ -1,0 +1,49 @@
+.courses-card {
+  width: 290px;
+  height: 338px;
+  background-color: $white-color;
+  padding: 25px 30px 30px 30px;
+  margin-bottom: 20px;
+
+  &__link {
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 700;
+  }
+
+  &__title {
+    padding-bottom: 20px;
+    border-bottom: 1px solid $light-gray-color;
+    @include flexCenter(row, space-between, center);
+    margin-bottom: 20px;
+
+    .heading3 {
+      text-transform: uppercase;
+    }
+  }
+
+  &__content {
+    @include flexCenter(column, space-between, center);
+    margin-bottom: 5px;
+
+    &-user {
+      @include flexCenter(row, space-between, center);
+      margin-bottom: 15px;
+
+      &-info {
+        width: 130px;
+      }
+
+      &-img {
+        width: 80px;
+        height: 52px;
+        margin-right: 15px;
+
+        img {
+          width: 100%;
+          height: 52px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,23 @@
+.about-card {
+  width: 850px;
+  height: 170px;
+  background-color: $white-color;
+  @include flexCenter(column, center, flex-start);
+  padding: 30px;
+  margin-bottom: 20px;
+
+  .heading1 {
+    margin-bottom: 15px;
+  }
+
+  &__text {
+    font-size: 15px;
+    margin-bottom: 20px;
+  }
+
+  &__link {
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 500;
+  }
+}

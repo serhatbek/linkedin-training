@@ -30,7 +30,7 @@ function Footer() {
                   <Link to="/about">
                     <Text text="Careers" />
                   </Link>
-                  <Link>
+                  <Link to="/Advertising">
                     <Text text="Advertising" />
                   </Link>
                   <Link to="/about">

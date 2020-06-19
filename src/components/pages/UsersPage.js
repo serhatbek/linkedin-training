@@ -40,7 +40,7 @@ class UsersPage extends Component {
                   name={user.name}
                   company={user.company.name}
                   src="https://picsum.photos/55/55"
-                  onButtonClick={() => this.btnDetails(user.id)}
+                  onBtnClick={() => this.btnDetails(user.id)}
                 />
               ))}
             </div>

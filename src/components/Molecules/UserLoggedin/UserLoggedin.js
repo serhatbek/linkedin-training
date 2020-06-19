@@ -2,7 +2,7 @@ import React from 'react';
 import Heading3 from '../../Atoms/Text/Heading3';
 import Text from '../../Atoms/Text/Text';
 import '../../../assets/css/main.css';
-const UserLoggedin = () => {
+const UserLoggedin = (props) => {
   return (
     <div className="user-loggedin">
       <div className="user-loggedin__img">

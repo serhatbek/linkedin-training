@@ -1,0 +1,37 @@
+.experience-card {
+  background-color: $white-color;
+  margin-bottom: 20px;
+  padding: 30px;
+
+  .heading1 {
+    margin-bottom: 25px;
+  }
+
+  &__content {
+    @include flexCenter(row, center, center);
+
+    &-img {
+      margin-right: 16px;
+    }
+
+    &-box {
+      &-subtitle {
+        width: 190px;
+        height: 15px;
+        @include flexCenter(row, space-between, center);
+        margin-bottom: 5px;
+      }
+
+      &-date {
+        width: 190px;
+        height: 15px;
+        @include flexCenter(row, space-between, center);
+        margin-bottom: 10px;
+      }
+
+      &-text {
+        font-size: 10px;
+      }
+    }
+  }
+}
